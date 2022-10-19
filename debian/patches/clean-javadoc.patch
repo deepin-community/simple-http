@@ -1,0 +1,10 @@
+--- a/build.xml
++++ b/build.xml
+@@ -13,6 +13,7 @@
+    <target name="clean" depends="layout">
+       <delete dir="${build.path}"/>
+       <delete dir="${jar.path}"/>
++      <delete dir="${javadoc.path}"/>
+    </target>
+ 
+    <target name="prepare" depends="clean">

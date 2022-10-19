@@ -1,0 +1,57 @@
+Source: simple-http
+Section: java
+Priority: extra
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Hans-Christoph Steiner <hans@eds.org>
+Build-Depends:
+ ant,
+ debhelper (>= 7.0.50~),
+ javahelper,
+ maven-repo-helper (>= 1.5~)
+Build-Depends-Indep: default-jdk, default-jdk-doc
+Standards-Version: 3.9.6
+Homepage: http://www.simpleframework.org/
+Vcs-Git: https://alioth.debian.org/anonscm/git/pkg-java/libsimple-http-java.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-java/libsimple-http-java.git
+
+Package: libsimple-http-java
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Recommends: ${java:Recommends}
+Suggests: libsimple-http-java-doc
+Description: high-performance, embeddable Java HTTP engine
+ The goal of Simple is to bring the power of simplicity to the world of server
+ side Java. The primary focus of the project is to provide a truly embeddable
+ Java based HTTP engine capable of handling enormous loads. 
+ .
+ Simple provides a truly asynchronous service model, request completion is
+ driven using an internal, transparent, monitoring system. This allows Simple
+ to vastly outperform most popular Java based servers in a multi-tier
+ environment, as it requires only a very limited number of threads to handle
+ very high quantities of concurrent clients. 
+ .
+ Simple has consistently out performed both commercial and open source Java
+ Servlet engines and has a fully comprehensive API that is as usable for
+ experienced Java developers as it is for beginners.
+
+Package: libsimple-http-java-doc
+Section: doc
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Recommends: ${java:Recommends}
+Description: Documentation for libsimple-http-java
+ The goal of Simple is to bring the power of simplicity to the world of server
+ side Java. The primary focus of the project is to provide a truly embeddable
+ Java based HTTP engine capable of handling enormous loads. 
+ .
+ Simple provides a truly asynchronous service model, request completion is
+ driven using an internal, transparent, monitoring system. This allows Simple
+ to vastly outperform most popular Java based servers in a multi-tier
+ environment, as it requires only a very limited number of threads to handle
+ very high quantities of concurrent clients. 
+ .
+ Simple has consistently out performed both commercial and open source Java
+ Servlet engines and has a fully comprehensive API that is as usable for
+ experienced Java developers as it is for beginners.
+ .
+ This package provides the API documentation for libsimple-http-java.

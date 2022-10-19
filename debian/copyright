@@ -1,0 +1,16 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+Upstream-Name: simple http server
+Source: http://simpleweb.sourceforge.net/
+
+Files: *
+Copyright: 2001-2009 Niall Gallagher <niallg@users.sf.net>
+License: Apache-2.0
+
+Files: debian/*
+Copyright: 2012 Big Switch Networks <rlane@bigswitch.com>,
+           Canonical Ltd (http://www.canonical.com)
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems, the complete text of the Apache version 2.0 license
+ can be found in "/usr/share/common-licenses/Apache-2.0".
